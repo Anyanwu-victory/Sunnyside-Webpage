@@ -24,7 +24,7 @@ const Nav = () => {
         <ul className="hidden md:flex space-x-10 items-center text-white font-medium">
           {NavList.map((item, index) => (
             <li key={index}>
-              <Link href="/" className="hover:text-yellow-300 transition font-fraunces">
+              <Link href="/" className="hover:text-black transition font-fraunces">
                 {item}
               </Link>
             </li>

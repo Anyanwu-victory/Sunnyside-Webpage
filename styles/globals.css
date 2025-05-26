@@ -23,7 +23,6 @@
 
 body {
     font-size: 18px;
-    background-image: url("/public/assets/images/desktop/image-header.jpg");
 }
 
 @layer utilities {
@@ -73,13 +72,7 @@ body {
   text-decoration: underline;
   text-decoration-color: hsl(7, 99%, 70%);
 }
-.image_graphic_design {
-  background: url(/public/images/desktop/image-graphic-design.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
 
-}
 /* Form Component */
 .form_textarea {
   @apply w-full flex rounded-lg h-[200px] mt-2 p-3 text-sm text-gray-500 outline-0;
