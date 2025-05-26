@@ -44,8 +44,9 @@ const Footer = () => {
       </div>
 
       <div className="justify-center flex-row space-x-6 items-center text-center mt-8">
-            <ul className="flex flex-wrap justify-center items-center space-x-[3rem] text-graphicDesigntext text-md ">
-                <li className="hover:text-white">About</li>
+            <ul className="flex flex-wrap justify-center items-center space-x-[3rem]
+             text-graphicDesigntext text-md ">
+                <li className="hover:text-white text-graphicDesigntext">About</li>
                 <li className="hover:text-white">Services</li>
                 <li className="hover:text-white">Projects</li>
             </ul>

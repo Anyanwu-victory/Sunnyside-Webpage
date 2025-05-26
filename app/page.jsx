@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -14,32 +14,32 @@ import Footer from "@components/footer";
 export default function Home() {
   return (
     <>
-    <div className="w-full overflow-hidden ">
-    <div className="w-full">
-      <Nav/> 
-    </div>
-      
-      <div className="overflow-hidden
+      <div className="w-full overflow-hidden ">
+        <div className="w-full">
+          <Nav />
+        </div>
+
+        <div
+          className="overflow-hidden
        absolute top-0 left-0 w-full
-        h-full z-10">
-      <OrangeSection/>
-      </div>
-      
-<div className="w-full mt-[41rem] md:mt-[69rem]  lg:mt-[44rem]">
-<TransformSection/>
-</div>
-      
-      <PinkCupBackground/>
-      <GridImages/>
-      <Testimonials/>
-      <Gallery/>
+        h-full z-10"
+        >
+          <OrangeSection />
+        </div>
 
-      <div className="w-full">
-        <Footer/>
-      </div>
-    </div>
+        <div className="w-full mt-[41rem] md:mt-[69rem]  lg:mt-[44rem]">
+          <TransformSection />
+        </div>
 
-</>
-   
+        <PinkCupBackground />
+        <GridImages />
+        <Testimonials />
+        <Gallery />
+
+        <div className="w-full">
+          <Footer />
+        </div>
+      </div>
+    </>
   );
 }
