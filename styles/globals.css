@@ -1,0 +1,90 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+    font-size: 18px;
+    background-image: url("/public/assets/images/desktop/image-header.jpg");
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+/* Tailwind Styles */
+
+.app {
+  @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
+}
+
+.white_btn {
+  @apply rounded-full border border-white bg-white py-1.5 px-5 text-black transition-all hover:bg-transparent hover:text-white text-center text-sm font-barlow flex items-center justify-center;
+}
+
+.head_text {
+  @apply mt-5 text-5xl font-extrabold leading-[1.15] text-white sm:text-6xl;
+}
+
+/* Nav Component */
+
+
+.dropdown {
+  @apply absolute right-0 top-full  mt-3 w-full p-7  rounded-lg bg-white min-w-[210px] flex flex-col gap-2 justify-center items-center;
+}
+
+.dropdown_link {
+  @apply text-sm font-barlow text-gray-700 hover:text-gray-500 font-medium;
+}
+
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+
+
+.yellow_underline:hover {
+  text-decoration: underline;
+  text-decoration-color: hsl(51, 100%, 49%);
+}
+
+.red_underline:hover {
+  text-decoration: underline;
+  text-decoration-color: hsl(7, 99%, 70%);
+}
+.image_graphic_design {
+  background: url(/public/images/desktop/image-graphic-design.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+}
+/* Form Component */
+.form_textarea {
+  @apply w-full flex rounded-lg h-[200px] mt-2 p-3 text-sm text-gray-500 outline-0;
+}
+
+.form_input {
+  @apply w-full flex rounded-lg mt-2 p-3 text-sm text-gray-500 outline-0;
+}
